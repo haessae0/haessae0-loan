@@ -31,6 +31,6 @@ public abstract class BaseEntity implements Serializable {
   @Column(name = "UPDT_DT")
   private LocalDateTime updtDt;
 
-  @Column(name = "IS_DELETED", length = 1)
-  private String isDeleted;
+  @Column(name = "IS_DELETED")
+  private Boolean isDeleted;
 }
