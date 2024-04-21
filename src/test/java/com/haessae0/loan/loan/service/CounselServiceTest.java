@@ -14,6 +14,7 @@ import org.mockito.Mock;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.modelmapper.ModelMapper;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import com.haessae0.loan.loan.domain.Counsel;
 import com.haessae0.loan.loan.dto.CounselDTO.Request;
@@ -22,6 +23,7 @@ import com.haessae0.loan.loan.exception.BaseException;
 import com.haessae0.loan.loan.exception.ResultType;
 import com.haessae0.loan.loan.repository.CounselRepository;
 
+@EnableJpaAuditing
 @ExtendWith(MockitoExtension.class)
 public class CounselServiceTest {
 
